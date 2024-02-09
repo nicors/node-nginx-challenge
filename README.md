@@ -1,6 +1,6 @@
 NodeJs + Mysql + Nginx challange
 
-## to run project
+## Run project
 ``
 docker compose up -d
 ``
