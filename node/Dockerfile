@@ -1,7 +1,5 @@
 FROM node:15
 
-RUN mkdir -p /home/src/app
-
 WORKDIR /home/src
 
 ENV DOCKERIZE_VERSION v0.6.1
@@ -12,5 +10,7 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 COPY package*.json ./
 
 RUN npm install
+
+COPY . .
 
 EXPOSE 3000

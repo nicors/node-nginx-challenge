@@ -12,7 +12,8 @@ services:
     networks: 
       - node-network
     volumes: 
-      - ./node/app:/home/src/app
+      - ./node:/home/src/
+      - /home/src/node_modules
     tty: true
     depends_on: 
        - db
