@@ -19,7 +19,6 @@ services:
        - db
 
   nginx:
-    image: nginx
     build: 
       context: ./nginx
       dockerfile: Dockerfile
